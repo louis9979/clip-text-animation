@@ -37,5 +37,13 @@ h1 {
     transition: 0.5s;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
     background-color: rgb(200, 229, 243);
+
+    &:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
+
+  &:nth-child(1):hover ~ h1 {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 }
